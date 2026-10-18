@@ -288,3 +288,10 @@ MIT — free to use in commercial and open-source projects.
 ---
 
 *Part of the AION Analytics open-source ecosystem — Built for Indian markets.*
+
+## Website, maintainer and security contact
+
+- Website page: https://aionanalytics.in/open-source/indian-market-calendar
+- Organisation: https://aionanalytics.in/ (AION Analytics, India)
+- Maintainer and security contact: contact@aionanalytics.in. Report a defect through GitHub issues; report a security concern by email, not in a public issue.
+- Company page: https://www.linkedin.com/company/aion-analytics-india/
