@@ -15,6 +15,23 @@ Indian market calendar for NSE, BSE, and MCX — Python package.
 [![License: MIT](https://img.shields.io/badge/License-MIT-green)](https://opensource.org/licenses/MIT)
 [![Downloads](https://img.shields.io/pypi/dm/aion-indian-market-calendar)](https://pypi.org/project/aion-indian-market-calendar/)
 
+## What changed in 1.5.1 (18 October 2026)
+
+SEBI revised the Closing Auction Session on 15 October 2026 (circular
+HO/47/11/11(3)2025-MRD-POD2/I/23843/2026, forwarded by NSE as NSE/CMTR/76963). From
+**7 December 2026**:
+
+| Segment | Until 2026-12-06 | From 2026-12-07 |
+|---|---|---|
+| `NSE_EQUITY_FNO_UNDERLYING`, `BSE_EQUITY_FNO_UNDERLYING` | continuous to 15:15, auction 15:15 to 15:35 | continuous to **15:30**, auction **15:30 to 15:40** |
+| `NSE_EQUITY_DERIVATIVES`, `BSE_EQUITY_DERIVATIVES` | to 15:40 | to **15:45** (expiring index contracts stop at 15:30 on expiry day) |
+| `NSE_EQUITY`, `BSE_EQUITY` and the 15:50 to 16:00 post-close | unchanged | unchanged |
+
+Dates before 7 December keep the August timings. NSE commodity non-agri contracts trade to 23:55
+from 2 November 2026 to 12 March 2027. Installs of 1.4.x receive the timing rules through the
+hash-verified data refresh. 1.5.1 also corrects the PyPI description and links that 1.5.0 published
+out of date. Full history: [CHANGELOG.md](CHANGELOG.md).
+
 ## Install
 
 ```bash
@@ -247,26 +264,16 @@ silent failures:
 
 ## Live Calendar Refresh
 
-Exchanges issue circulars that shift known holidays (moon-sighting changes for Eid, election days) or
-change session timings. The live-refresh path applies these without repackaging:
-
-```python
-cal = IndiaMarketCalendar.bundled(
-    2026,
-    refresh_url="https://dashboard.aiondashboard.site/calendar/live_events.json",
-    refresh_interval_hours=6,
-)
-cal.refresh()
-```
-
-The delta carries `events`, `deleted_ids`, `session_rules`, and `market_sessions`, so an effective-dated
-timing change reaches an already-installed `>=1.2.0` package with no upgrade. Offline use (no
-`refresh_url`) makes no network requests and sends no telemetry.
+Since 1.4.0 the package refreshes its data at most once a day from
+[aion-market-calendar-data](https://github.com/AION-Analytics-India/aion-market-calendar-data). Every
+file must match the SHA-256 in the manifest before it is adopted. The data carries events and, since
+the 2026-10-18 dataset, `session_rules`, so an effective-dated timing change reaches an installed
+1.4.x package with no upgrade. Set `AION_IN_CALENDAR_OFFLINE=1` to use the bundled data only. The
+older `refresh_url` path was removed in 1.4.1 (the argument is accepted and ignored).
 
 ## Changelog
 
-Release history is in [CHANGELOG.md](CHANGELOG.md), kept identical to the changelog published on
-PyPI.
+Release history is in [CHANGELOG.md](CHANGELOG.md), a copy of the changelog in the source repository.
 
 ## Documentation Boundary
 
