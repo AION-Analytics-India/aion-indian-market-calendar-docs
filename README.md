@@ -6,7 +6,7 @@
 >
 > - Source: https://github.com/AION-Analytics-India/aion-indian-market-calendar
 > - Package: https://pypi.org/project/aion-indian-market-calendar/
-> - Full write-up: https://dashboard.aiondashboard.site/open-source/indian-market-calendar
+> - Full write-up: https://aionanalytics.in/open-source/indian-market-calendar
 
 Indian market calendar for NSE, BSE, and MCX — Python package.
 
@@ -253,7 +253,7 @@ change session timings. The live-refresh path applies these without repackaging:
 ```python
 cal = IndiaMarketCalendar.bundled(
     2026,
-    refresh_url="https://dashboard.aiondashboard.site/calendar/live_events.json",
+    refresh_url="https://aionanalytics.in/calendar/live_events.json",
     refresh_interval_hours=6,
 )
 cal.refresh()
