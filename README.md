@@ -1,12 +1,12 @@
-# aion-indian-market-calendar
+# Legacy documentation mirror — AION Indian Market Calendar
 
-> **Source code has moved.** The package source now lives at
-> **[aion-indian-market-calendar](https://github.com/AION-Analytics-India/aion-indian-market-calendar)**.
-> This repository holds documentation only.
+> **Do not file code issues or look for source here.** The maintained, MIT-licensed implementation, tests and current documentation live at **[AION-Analytics-India/aion-indian-market-calendar](https://github.com/AION-Analytics-India/aion-indian-market-calendar)**. Start there to read, fork, star or contribute.
 >
-> - Source: https://github.com/AION-Analytics-India/aion-indian-market-calendar
-> - Package: https://pypi.org/project/aion-indian-market-calendar/
-> - Full write-up: https://dashboard.aiondashboard.site/open-source/indian-market-calendar
+> - **Canonical code and issues:** https://github.com/AION-Analytics-India/aion-indian-market-calendar
+> - **Current PyPI release:** https://pypi.org/project/aion-indian-market-calendar/ (1.7.1 as of 6 November 2026)
+> - **Current product overview:** https://aionanalytics.in/open-source/indian-market-calendar
+>
+> This separate repository preserves older reference material. Its version-specific examples may lag the maintained source. It is not an alternative implementation or an installation source.
 
 Indian market calendar for NSE, BSE, and MCX — Python package.
 
@@ -15,7 +15,7 @@ Indian market calendar for NSE, BSE, and MCX — Python package.
 [![License: MIT](https://img.shields.io/badge/License-MIT-green)](https://opensource.org/licenses/MIT)
 [![Downloads](https://img.shields.io/pypi/dm/aion-indian-market-calendar)](https://pypi.org/project/aion-indian-market-calendar/)
 
-## What changed in 1.5.1 (18 October 2026)
+## Historical release notes: 1.5.1 (18 October 2026)
 
 SEBI revised the Closing Auction Session on 15 October 2026 (circular
 HO/47/11/11(3)2025-MRD-POD2/I/23843/2026, forwarded by NSE as NSE/CMTR/76963). From
@@ -47,24 +47,7 @@ pip install aion-indian-market-calendar
 BSE, and MCX. It is designed for developers who need reliable Indian exchange session checks,
 trading-day checks, holiday calendars, and market-open validation in Python.
 
-It is built for these developer search intents:
-
-- Indian market calendar Python
-- NSE market calendar Python
-- MCX trading calendar Python
-- BSE trading calendar Python
-- India trading holidays API
-- Python NSE trading calendar
-- market open India Python
-- NSE holiday list Python
-- Indian exchange session times Python
-- MCX evening session calendar Python
-- Muhurat trading calendar API
-- Closing Auction Session Python
-- Python library for Indian stock market holidays
-- How to check if NSE market is open in Python
-- aion-indian-market-calendar vs pandas_market_calendars
-- Why pandas_market_calendars fails for Indian exchanges
+For supported session calculations, current examples, release notes and the test suite, use the [maintained source repository](https://github.com/AION-Analytics-India/aion-indian-market-calendar). This page is historical documentation; it is not the canonical developer reference.
 
 ## Closing Auction Session — from 2026-08-03
 
@@ -286,7 +269,7 @@ installation. See `.gitignore`, which blocks package artefacts from being commit
 
 ## Issues and Feature Requests
 
-Open an issue in this repository for bug reports and feature requests.
+Open an issue in the [maintained source repository](https://github.com/AION-Analytics-India/aion-indian-market-calendar/issues) for package defects or feature requests. This mirror does not accept implementation changes.
 
 ## License
 
