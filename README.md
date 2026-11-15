@@ -3,7 +3,7 @@
 > **Do not file code issues or look for source here.** The maintained, MIT-licensed implementation, tests and current documentation live at **[AION-Analytics-India/aion-indian-market-calendar](https://github.com/AION-Analytics-India/aion-indian-market-calendar)**. Start there to read, fork, star or contribute.
 >
 > - **Canonical code and issues:** https://github.com/AION-Analytics-India/aion-indian-market-calendar
-> - **Current PyPI release:** https://pypi.org/project/aion-indian-market-calendar/ (1.7.1 as of 6 November 2026)
+> - **Current PyPI release:** https://pypi.org/project/aion-indian-market-calendar/ (1.8.0 published 15 November 2026; 1.7.1 yanked)
 > - **Current product overview:** https://aionanalytics.in/open-source/indian-market-calendar
 >
 > This separate repository preserves older reference material. Its version-specific examples may lag the maintained source. It is not an alternative implementation or an installation source.
@@ -14,6 +14,8 @@ Indian market calendar for NSE, BSE, and MCX — Python package.
 [![Python](https://img.shields.io/pypi/pyversions/aion-indian-market-calendar)](https://pypi.org/project/aion-indian-market-calendar/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green)](https://opensource.org/licenses/MIT)
 [![Downloads](https://img.shields.io/pypi/dm/aion-indian-market-calendar)](https://pypi.org/project/aion-indian-market-calendar/)
+
+See the [1.8.0 correctness advisory](https://github.com/AION-Analytics-India/aion-indian-market-calendar/releases/tag/v1.8.0). CDS INR pairs trade 09:00-17:00 IST subject to currency-specific closures. Data refresh does not install Python patches. No production automatic software installation.
 
 ## Historical release notes: 1.5.1 (18 October 2026)
 
